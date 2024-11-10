@@ -5,19 +5,58 @@
   border-radius: 16px;
   margin: 0 auto;
   position: relative;
+  padding: 26px 36px;
 }
 
-.svg_holder{
-    width: 176px;
-    height: 176px;
-    border-radius: 16px;
-    position: absolute;
-    right: 68px;
-    bottom: -70px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
+.svg_holder {
+  width: 176px;
+  height: 176px;
+  border-radius: 16px;
+  position: absolute;
+  right: 68px;
+  bottom: -70px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.02),
+    0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 10px rgba(0, 0, 0, 0.035),
+    0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 33.4px rgba(0, 0, 0, 0.05),
+    0px 0px 80px rgba(0, 0, 0, 0.07);
 }
 
+.icon {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  border: 1px solid white;
+}
+.navbarUL {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.hyperLink {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 8px 16px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}

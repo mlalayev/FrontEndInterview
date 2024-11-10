@@ -1,11 +1,42 @@
 import React from "react";
-import styles from "./page.module.css";
+import header from "./page.module.css";
 import "../Root.css";
+import Image from "next/image";
+import logo from "../../public/assets/img/icon2.png";
 
 function page() {
   return (
-    <header className={styles.header}>
-      <div className={styles.svg_holder}>
+    <header className={header.header}>
+      <nav className={header.navbar}>
+        <div className={header.header_left}>
+          <Image className={header.icon} src={logo} alt="" />
+
+          <ul className={header.navbarUL}>
+            <li>
+              <a className={header.hyperLink} href="#">
+                HTML
+              </a>
+            </li>
+            <li>
+              <a className={header.hyperLink} href="#">
+                CSS
+              </a>
+            </li>
+            <li>
+              <a className={header.hyperLink} href="#">
+                JavaScript
+              </a>
+            </li>
+            <li>
+              <a className={header.hyperLink} href="#">
+                React
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div className={header.svg_holder}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="8vw"
@@ -21,8 +52,6 @@ function page() {
             d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692l3.382 37.927H64zm0 35.743l-.061.017l-15.327-4.14l-.979-10.975H33.816l1.928 21.609l28.193 7.826l.063-.017z M63.952 52.455v13.763h16.947l-1.597 17.849l-15.35 4.143v14.319l28.215-7.82l.207-2.325l3.234-36.233l.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092l.628-6.978l.329-3.692z"
           />
         </svg>
-
-        
       </div>
     </header>
   );
