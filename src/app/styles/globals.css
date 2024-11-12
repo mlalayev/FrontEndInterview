@@ -17,7 +17,6 @@ body {
   font-style: normal;
 }
 
-
-::selection{
-    background: var(--primary-pink);
-  }
+::selection {
+  background: var(--primary-pink);
+}
